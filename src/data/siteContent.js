@@ -5,7 +5,7 @@ export const site = {
   about: 'A Spartha acredita na força da participação. Nossa vontade é construir, junto com os estudantes, uma escola mais acolhedora, integrada e cheia de oportunidades.',
   mascot: { name: 'Dório', title: 'O guardião da Spartha', description: 'Dório é a tartaruga e mascote oficial da chapa Spartha. Leal, corajoso, determinado e inteligente, ele está sempre pronto para ajudar.', values: 'Ele representa união, resistência, coragem e compromisso com os estudantes. Sua mensagem é que uma escola forte se constrói com a união de todos.', quote: 'Uma escola forte se constrói com a união de todos!' },
   // Coloque arquivos em public/images e informe os caminhos abaixo, por exemplo: '/images/logo.png'.
-  images: { logo: '', mascot: '', mascotPortrait: '/images/Mascote tartaruga espartana em emblema dourado.png' },
+  images: { logo: '', mascot: '/images/Dório, guardião espartano.png', mascotPortrait: '/images/Mascote tartaruga espartana em emblema dourado.png' },
   // Exemplo: { name: 'Nome', role: 'Função', description: 'Descrição', photo: '/images/foto.jpg' }
   members: [
     { name: 'Miguel Almeida', role: 'Coordenador geral', className: '9º B' },
