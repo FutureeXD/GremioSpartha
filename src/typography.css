@@ -1,0 +1,6 @@
+/* Jersey 20 é usada em toda a interface, com fontes locais como alternativa. */
+:root, button, .brand, .brand small, .hero h1, h2, .crest-number, .crest strong,
+.proposal-card h3, .team-panel h3, .contact-number, .mascot-monogram,
+.mascot-copy h3, .mascot-copy blockquote {
+  font-family: 'Jersey 20', sans-serif;
+}
