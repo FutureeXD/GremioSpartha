@@ -1,0 +1,71 @@
+/* Composição mais aberta, com a identidade vinho e dourado da Spartha. */
+:root { --cream: #fffaf1; background: var(--cream); }
+.header { position: sticky; top: 0; background: #30070bf2; backdrop-filter: blur(16px); box-shadow: 0 4px 24px #25060918; }
+.nav-wrap { gap: 24px; }
+.nav { gap: 20px; font-size: 12px; }
+.nav a { position: relative; padding-block: 8px; }
+.nav a::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform .2s; }
+.nav a:hover::after, .nav a:focus-visible::after { transform: scaleX(1); }
+.nav-cta { white-space: nowrap; border-radius: 8px; }
+.hero-inner { min-height: 690px; grid-template-columns: 1.05fr 1fr; gap: 40px; padding-block: 85px; }
+.hero h1 { font-size: clamp(46px, 5.6vw, 76px); line-height: 1.12; font-weight: 800; }
+h1 em, h2 em { font-style: normal; }
+.hero-copy>p { font-size: 16px; line-height: 1.9; }
+.eyebrow { display: inline-flex; flex-wrap: wrap; border: 1px solid #dba13e44; border-radius: 30px; padding: 10px 14px; letter-spacing: .12em; }
+.eyebrow span { width: 7px; height: 7px; border-radius: 50%; }
+.hero-actions { flex-wrap: wrap; gap: 22px; }
+.button { border-radius: 9px; padding: 18px 24px; box-shadow: 0 8px 28px #00000012; }
+.hero-showcase { height: 470px; min-width: 0; }
+.showcase-image { width: 100%; position: relative; overflow: hidden; border-radius: 45% 45% 22% 22%; border: 1px solid #e7b55f55; box-shadow: 0 30px 70px #18020466; }
+.hero-showcase .showcase-image img { display: block; width: 100%; max-width: 100%; max-height: none; height: auto; }
+.showcase-ring { position: absolute; width: 94%; aspect-ratio: 1; border: 1px dashed #e7b55f66; border-radius: 50%; transform: rotate(-15deg); }
+.floating-label { position: absolute; display: flex; align-items: center; gap: 12px; background: #fff8e9; color: #793923; border: 1px solid #ebcfa0; box-shadow: 0 16px 35px #17020433; padding: 17px 20px; border-radius: 14px; font-size: 10px; z-index: 1; animation: label-arrive .8s .3s backwards; }
+.floating-label strong { display: block; margin-top: 5px; font-size: 13px; color: #430910; }
+.label-top { top: 18px; left: -18px; transform: rotate(-4deg); }
+.label-bottom { bottom: 12px; right: -10px; transform: rotate(3deg); transition: box-shadow .25s; }
+.label-bottom:hover { box-shadow: 0 18px 40px #17020466; }
+.hero-vote { position: absolute; right: 5px; top: 40px; color: #ebbc6b; font-size: 9px; letter-spacing: .15em; }
+.hero-vote b { display: block; font-size: 34px; letter-spacing: -.05em; }
+.ticker { padding-block: 19px; }
+.section { padding-top: 110px; padding-bottom: 110px; }
+h2 { font-size: clamp(32px, 3.8vw, 51px); line-height: 1.17; }
+.section-index { margin-bottom: 50px; }
+.about { background: #fffaf1; }
+.values { gap: 0; justify-content: space-between; }
+.values span { flex: 1; padding: 15px; border-left: 2px solid #e3bd80; }
+.proposals { background: #f5edde; }
+.filters { margin: 35px 0; gap: 10px; }
+.filters button { font-size: 12px; padding: 12px 17px; background: #fffaf1; }
+.proposal-grid { gap: 22px; }
+.proposal-card { border-radius: 16px; padding: 30px; background: #fffcf7; border-color: #eadfcf; box-shadow: 0 8px 24px #43091004; min-height: 290px; transition: transform .25s, box-shadow .25s, border-color .25s; }
+.proposal-card:hover { box-shadow: 0 18px 38px #43091012; transform: translateY(-6px); }
+.icon { width: 54px; height: 54px; border-radius: 15px; }
+.proposal-card:nth-child(3n+2) .icon { background: #f3ded8; color: #73272c; }
+.proposal-card:nth-child(3n+3) .icon { background: #eee7d5; color: #6f5b2e; }
+.proposal-card h3 { font-size: 20px; line-height: 1.4; }
+.proposal-card p { font-size: 14px; line-height: 1.8; }
+.card-num { font-family: inherit; }
+.card-line { margin-top: 24px; top: 0; }
+.mascot { background: radial-gradient(ellipse at 15% 50%, #65141d, #34070c 65%); }
+.mascot-visual { border-radius: 24px; padding: 18px; box-shadow: 0 24px 50px #17020444; }
+.mascot-visual::before { border-radius: 18px; }
+.mascot-visual img { border-radius: 14px; }
+.team-layout { display: block; }
+.team-layout>div:first-child { text-align: center; margin-bottom: 45px; }
+.team-layout>div>p { margin-inline: auto; max-width: 580px; }
+.team-panel { padding: 0; border: 0; background: transparent; }
+.team-panel::after, .team-panel>.team-symbol, .team-panel>span { display: none; }
+.members { grid-template-columns: repeat(4,minmax(0,1fr)); gap: 20px; }
+.members article { border-radius: 16px; padding: 26px 20px; background: #fffaf3; color: #430910; border: 1px solid #e5d4bc; box-shadow: 0 6px 20px #43091004; }
+.members article::before { content: '✦'; display: grid; place-items: center; background: #f1e1c6; color: #9a6823; width: 44px; height: 44px; border-radius: 12px; margin-bottom: 22px; }
+.members article:hover { background: white; }
+.members b { color: #795d55; font-size: 12px; min-height: 36px; }
+.member-class { background: #f2e5d0; padding: 5px 10px; border-radius: 20px; color: #664519; margin-top: 15px; }
+.contact { background: radial-gradient(ellipse at center top,#7c2029,#430910); }
+.contact h2 { font-size: clamp(38px,5vw,66px); }
+@keyframes label-arrive { from { opacity: 0; translate: 0 20px; } to { opacity: 1; translate: 0 0; } }
+@media(max-width:1100px) { .nav-cta { display: none; } .members { grid-template-columns: repeat(2,minmax(0,1fr)); } .floating-label { padding: 12px; } .hero-inner { gap: 28px; } }
+@media(max-width:850px) { .hero-inner { grid-template-columns: 1fr; padding-top: 60px; } .hero-copy { max-width: 640px; } .hero-showcase { width: min(100%,500px); margin: 15px auto 0; } .section { padding-block: 75px; } .hero h1 { font-size: clamp(42px,7vw,66px); } }
+@media(max-width:650px) { .nav { gap: 0; } .hero-showcase { height: 340px; } .label-top { left: 0; top: 0; } .label-bottom { right: 0; bottom: 0; } .hero-vote { top: 60px; right: 10px; } .hero-actions { gap: 20px; } .eyebrow { font-size: 8px; } .proposal-card { padding: 25px; min-height: 0; } .team-panel { padding: 0; } .members { gap: 10px; } .members article { padding: 18px 14px; } .members h3 { font-size: 15px; } }
+@media(max-width:380px) { .members { grid-template-columns: 1fr; } .hero h1 { font-size: 38px; } .floating-label strong { font-size: 11px; } }
+@media(prefers-reduced-motion:reduce) { .floating-label { animation: none; } .proposal-card:hover { transform: none; } }

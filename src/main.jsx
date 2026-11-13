@@ -5,4 +5,5 @@ import './style.css';
 import './mascot.css';
 import './typography.css';
 import './graphics.css';
+import './landing.css';
 createRoot(document.getElementById('root')).render(<App />);
