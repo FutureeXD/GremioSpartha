@@ -4,3 +4,9 @@
 .mascot-copy h3, .mascot-copy blockquote {
   font-family: 'Montserrat', sans-serif;
 }
+.members { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 20px; }
+.members article { border: 1px solid #b7814566; padding: 15px; min-width: 0; }
+.members h3 { font-size: 17px; margin: 0 0 8px; overflow-wrap: anywhere; }
+.members b { display: block; color: #f1dfc5; font-size: 11px; line-height: 1.5; }
+.member-class { display: inline-block; color: #e2b66e; font-size: 11px; margin-top: 8px; }
+@media (max-width: 380px) { .members { grid-template-columns: 1fr; } }

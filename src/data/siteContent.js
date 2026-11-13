@@ -7,7 +7,16 @@ export const site = {
   // Coloque arquivos em public/images e informe os caminhos abaixo, por exemplo: '/images/logo.png'.
   images: { logo: '', mascot: '' },
   // Exemplo: { name: 'Nome', role: 'Função', description: 'Descrição', photo: '/images/foto.jpg' }
-  members: [],
+  members: [
+    { name: 'Miguel Almeida', role: 'Coordenador geral', className: '9º B' },
+    { name: 'Vitoria', role: 'Vice coordenadora geral', className: '9º C' },
+    { name: 'Gabrielly', role: 'Coordenadora artística', className: '8º D' },
+    { name: 'Kaik', role: 'Coordenador desportivo', className: '8º B' },
+    { name: 'Paula', role: 'Coordenadora comunicativa', className: '8º B' },
+    { name: 'Guilherme', role: 'Coordenador de saúde e sustentabilidade', className: '1º D' },
+    { name: 'Manuelly', role: 'Coordenador comunitário', className: '7º B' },
+    { name: 'Sarah', role: 'Coordenador de convivência', className: '1º A' },
+  ],
   // Exemplo: { label: 'Instagram', url: 'https://...' }. Só aparecem canais preenchidos.
   contacts: [],
 };
