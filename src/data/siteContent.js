@@ -18,7 +18,10 @@ export const site = {
     { name: 'Sarah', role: 'Coordenador de convivência', className: '1º A' },
   ],
   // Exemplo: { label: 'Instagram', url: 'https://...' }. Só aparecem canais preenchidos.
-  contacts: [],
+  contacts: [
+    { label: 'Instagram', url: 'https://www.instagram.com/spartha.gremio/' },
+    { label: 'WhatsApp', url: 'https://wa.me/5511956832307?text=possuo%20uma%20ideia%20de%20proposta' },
+  ],
 };
 
 // Acrescente, edite ou remova propostas nesta lista. O ícone deve existir no mapa em App.jsx.
