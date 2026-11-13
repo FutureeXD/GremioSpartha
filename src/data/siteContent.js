@@ -23,16 +23,16 @@ export const site = {
 
 // Acrescente, edite ou remova propostas nesta lista. O ícone deve existir no mapa em App.jsx.
 export const proposals = [
- { title:'Queremos a biblioteca de volta', category:'Educação e cultura', icon:'book', description:'Buscar a reativação de um espaço dedicado à leitura e ao acesso a livros para os estudantes.' },
- { title:'Gincanas, desafios e premiações', category:'Integração e participação', icon:'trophy', description:'Promover desafios e atividades, inclusive ligados às lições, com possíveis prêmios em produtos ou itens custeados por recursos arrecadados pelo grêmio, sem pagamentos em dinheiro.' },
- { title:'Interescolas', category:'Esporte e integração', icon:'medal', description:'Buscar competições e atividades com outras escolas, levando a integração para além dos muros da nossa escola.' },
- { title:'Trote de integração', category:'Integração e participação', icon:'users', description:'Organizar atividades divertidas, respeitosas e voluntárias para aproximar as turmas, sem constrangimento ou humilhação.' },
- { title:'Trazer a Semana Acadêmica de volta', category:'Educação e cultura', icon:'calendar', description:'Trabalhar por uma retomada gradual e adaptada, com palestras e apresentações, respeitando a rotina escolar sem interromper uma semana inteira de aulas.' },
- { title:'Festa à fantasia', category:'Cultura e eventos', icon:'sparkles', description:'Propor uma festa à fantasia, com possível temática de Halloween, para celebrar a criatividade e a integração.' },
- { title:'Um interclasse mais organizado', category:'Esporte e integração', icon:'flag', description:'Trabalhar por atividades e competições entre turmas que incentivem o esporte, o respeito e o trabalho em equipe.' },
- { title:'Projeto de horta escolar', category:'Sustentabilidade', icon:'sprout', description:'Buscar a criação de uma horta com participação dos estudantes, incentivando o aprendizado sobre alimentação e meio ambiente.' },
- { title:'Projeto de reciclagem', category:'Sustentabilidade', icon:'recycle', description:'Desenvolver uma proposta para incentivar o descarte adequado de materiais e a conscientização ambiental na escola.' },
- { title:'Valorização da saúde mental', category:'Cuidado e bem-estar', icon:'heart', description:'Divulgar e incentivar os alunos a conhecerem o serviço de psicologia disponível na escola.' },
- { title:'Melhoria da estrutura escolar', category:'Cuidado e bem-estar', icon:'school', description:'Ouvir as necessidades dos estudantes e levar sugestões à direção para melhorar os espaços e as condições da escola.' },
- { title:'Eventos escolares', category:'Cultura e eventos', icon:'party', description:'Incentivar eventos e atividades recreativas para tornar a rotina escolar mais divertida e participativa.' },
+ { title:'Queremos a biblioteca de volta', category:'Educação e cultura', icon:'book', description:'Buscar a volta de um espaço na escola onde os estudantes possam ler e ter acesso a livros.' },
+ { title:'Gincanas, desafios e premiações', category:'Integração e participação', icon:'trophy', description:'Propor gincanas e desafios, inclusive ligados às lições. Os participantes poderão concorrer a produtos ou outros itens comprados com recursos arrecadados pelo grêmio; não haverá prêmios em dinheiro.' },
+ { title:'Interescolas', category:'Esporte e integração', icon:'medal', description:'Buscar a realização de competições e atividades com outras escolas, para aproximar estudantes de diferentes comunidades.' },
+ { title:'Trote de integração', category:'Integração e participação', icon:'users', description:'Propor atividades divertidas para aproximar as turmas. A ideia é que a participação seja voluntária, com respeito e sem constrangimento ou humilhação.' },
+ { title:'Trazer a Semana Zacarias de volta', category:'Educação e cultura', icon:'calendar', description:'Buscar a volta gradual da Semana Zacarias, com palestras e apresentações, incluindo releituras de músicas e filmes. A ideia é adaptar as atividades à rotina escolar, sem deixar uma semana inteira sem aulas.' },
+ { title:'Festa à fantasia', category:'Cultura e eventos', icon:'sparkles', description:'Propor uma festa à fantasia para reunir os estudantes, com espaço para criatividade e diversão. Uma possibilidade é usar o Halloween como tema.' },
+ { title:'Um interclasse mais organizado', category:'Esporte e integração', icon:'flag', description:'Trabalhar por um interclasse com atividades e competições mais organizadas entre as turmas, incentivando o esporte, o respeito e o trabalho em equipe.' },
+ { title:'Horta escolar', category:'Sustentabilidade', icon:'sprout', description:'Buscar a criação de uma horta para que os estudantes participem do cultivo e aprendam sobre alimentação e meio ambiente.' },
+ { title:'Projeto de reciclagem', category:'Sustentabilidade', icon:'recycle', description:'Propor ações para separar e descartar os materiais corretamente, incentivando o cuidado com o meio ambiente na escola.' },
+ { title:'Valorização da saúde mental', category:'Cuidado e bem-estar', icon:'heart', description:'Divulgar o serviço de psicologia disponível na escola e incentivar os estudantes a conhecê-lo.' },
+ { title:'Melhoria da estrutura escolar', category:'Cuidado e bem-estar', icon:'school', description:'Ouvir o que os estudantes precisam e levar à direção sugestões para melhorar os espaços e as condições da escola.' },
+ { title:'Eventos escolares', category:'Cultura e eventos', icon:'party', description:'Incentivar eventos e atividades recreativas para tornar a rotina escolar mais divertida e reunir os estudantes.' },
 ];
