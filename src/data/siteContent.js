@@ -3,6 +3,7 @@ export const site = {
   name: 'Spartha', slogan: 'Juntos somos mais fortes!', school: 'Escola Zacarias Antonio', number: '300',
   intro: 'Uma escola melhor se constrói com a união de todos. Queremos ouvir os estudantes, aproximar as turmas e transformar boas ideias em propostas.',
   about: 'A Spartha acredita na força da participação. Nossa vontade é construir, junto com os estudantes, uma escola mais acolhedora, integrada e cheia de oportunidades.',
+  mascot: { name: 'Dório', title: 'O guardião da Spartha', description: 'Dório é a tartaruga e mascote oficial da chapa Spartha. Leal, corajoso, determinado e inteligente, ele está sempre pronto para ajudar.', values: 'Ele representa união, resistência, coragem e compromisso com os estudantes. Sua mensagem é que uma escola forte se constrói com a união de todos.', quote: 'Uma escola forte se constrói com a união de todos!' },
   // Coloque arquivos em public/images e informe os caminhos abaixo, por exemplo: '/images/logo.png'.
   images: { logo: '', mascot: '' },
   // Exemplo: { name: 'Nome', role: 'Função', description: 'Descrição', photo: '/images/foto.jpg' }
