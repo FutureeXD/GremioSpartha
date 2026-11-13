@@ -4,4 +4,5 @@ import App from './App';
 import './style.css';
 import './mascot.css';
 import './typography.css';
+import './graphics.css';
 createRoot(document.getElementById('root')).render(<App />);

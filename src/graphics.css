@@ -1,0 +1,34 @@
+/* Grafismos decorativos inspirados no ouro, nos emblemas e nas faixas da Spartha. */
+.hero { position: relative; isolation: isolate; }
+.hero::before { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: .16; background: repeating-linear-gradient(135deg, transparent 0 62px, #b65a3838 63px 65px, transparent 66px 110px); }
+.hero-copy { animation: spartha-enter .8s ease-out both; }
+.hero-art { animation: spartha-enter 1s .12s ease-out both; }
+.art-orbit::before, .art-orbit::after { content: ''; position: absolute; width: 8px; height: 8px; background: #e2aa49; transform: rotate(45deg); box-shadow: 0 0 16px #e2aa4966; }
+.art-orbit::before { top: 12%; left: 14%; }
+.art-orbit::after { bottom: 12%; right: 14%; }
+.orbit-one { animation: emblem-turn 4s ease-out both; }
+.orbit-two { border-style: dashed; animation: emblem-turn 4s ease-out reverse both; }
+.mascot-visual { overflow: hidden; }
+.mascot-visual::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(115deg, transparent 35%, #ffe0a022 49%, transparent 63%); transform: translateX(-130%); }
+@media (hover: hover) {
+  .mascot-visual:hover::after { animation: gold-pass 1.3s ease-out; }
+  .mascot-visual img { transition: transform .5s ease; }
+  .mascot-visual:hover img { transform: scale(1.025); }
+  .proposal-card .icon { transition: transform .25s ease, background .25s ease; }
+  .proposal-card:hover .icon { transform: rotate(-7deg); background: #eacb91; }
+}
+.section-index { position: relative; }
+.section-index::after { content: ''; position: absolute; width: 7px; height: 7px; right: 0; bottom: -4px; transform: rotate(45deg); background: #c69243; }
+.contact::before, .contact::after { content: ''; position: absolute; width: 420px; height: 420px; border: 1px solid #dba13e40; border-radius: 50%; pointer-events: none; }
+.contact::before { left: -280px; top: -100px; box-shadow: 0 0 0 24px #dba13e0c, 0 0 0 48px #dba13e08; }
+.contact::after { right: -280px; bottom: -100px; box-shadow: 0 0 0 24px #dba13e0c, 0 0 0 48px #dba13e08; }
+.button, .nav-cta { position: relative; overflow: hidden; }
+.button::after, .nav-cta::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(110deg, transparent 30%, #fff5d644 50%, transparent 70%); transform: translateX(-130%); }
+.button:hover::after, .button:focus-visible::after, .nav-cta:hover::after { animation: gold-pass .65s ease-out; }
+@keyframes spartha-enter { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes emblem-turn { from { transform: rotate(-35deg); opacity: .3; } to { transform: rotate(0); opacity: 1; } }
+@keyframes gold-pass { to { transform: translateX(130%); } }
+@media (prefers-reduced-motion: reduce) {
+  .hero-copy, .hero-art, .art-orbit, .mascot-visual::after, .button::after, .nav-cta::after { animation: none !important; }
+  .mascot-visual:hover img, .proposal-card:hover .icon { transform: none; }
+}
