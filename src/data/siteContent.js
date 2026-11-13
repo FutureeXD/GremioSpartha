@@ -1,6 +1,6 @@
 // Edite aqui os textos, propostas, integrantes, imagens e canais da chapa.
 export const site = {
-  name: 'Spartha', slogan: 'Juntos somos mais fortes!', school: 'Escola Cezaria Antônio da Silva', number: '300',
+  name: 'Spartha', slogan: 'Juntos somos mais fortes!', school: 'Escola Zacarias Antonio', number: '300',
   intro: 'Uma escola melhor se constrói com a união de todos. Queremos ouvir os estudantes, aproximar as turmas e transformar boas ideias em propostas.',
   about: 'A Spartha acredita na força da participação. Nossa vontade é construir, junto com os estudantes, uma escola mais acolhedora, integrada e cheia de oportunidades.',
   // Coloque arquivos em public/images e informe os caminhos abaixo, por exemplo: '/images/logo.png'.
