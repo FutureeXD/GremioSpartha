@@ -4,14 +4,16 @@ Site da chapa do grêmio estudantil, feito com React e Vite.
 
 ## Executar
 
-Instale o Node.js (versão compatível com o Vite atual) e, na pasta do projeto, execute:
+Instale o Node.js 24 e, na pasta do projeto, execute:
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
 Abra o endereço informado no terminal. Para gerar a versão de produção, execute `npm run build`; para conferi-la, execute `npm run preview`.
+
+Na Vercel, selecione a raiz deste projeto como Root Directory. O arquivo `vercel.json` configura a instalação com `npm ci`, o build com `npm run build` e a saída em `dist`. Envie `package.json`, `package-lock.json` e `vercel.json` junto com o código. Se o erro persistir, confira os comandos personalizados e o log de instalação nas configurações da Vercel.
 
 ## Personalizar
 
