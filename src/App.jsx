@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { ArrowDown, ArrowRight, BookOpen, CalendarDays, Flag, Heart, Medal, Menu, PartyPopper, Recycle, School, Sparkles, Sprout, Trophy, Users, X } from 'lucide-react';
 import { site, proposals } from './data/siteContent';
 import Mascot from './Mascot';
+import useReveal from './useReveal';
 
 const icons = {book:BookOpen,trophy:Trophy,medal:Medal,users:Users,calendar:CalendarDays,sparkles:Sparkles,flag:Flag,sprout:Sprout,recycle:Recycle,heart:Heart,school:School,party:PartyPopper};
 const links = [['Início','#inicio'],['Sobre','#sobre'],['Dório','#dorio'],['Propostas','#propostas'],['Integrantes','#integrantes'],['Contato','#contato']];
 function Brand(){return <a className="brand" href="#inicio" aria-label="Spartha, voltar ao início">{site.images.logo ? <img src={site.images.logo} alt="" /> : <span className="brand-mark">S</span>}<span>SPARTHA<small>GRÊMIO ESTUDANTIL</small></span></a>}
 function App(){
  const [menu,setMenu]=useState(false); const [filter,setFilter]=useState('Todas');
+ useReveal(filter);
  const categories=['Todas',...new Set(proposals.map(p=>p.category))];
  const visible=filter==='Todas'?proposals:proposals.filter(p=>p.category===filter);
  return <><a className="skip" href="#conteudo">Pular para o conteúdo</a><header className="header"><div className="nav-wrap"><Brand/><button className="menu-toggle" onClick={()=>setMenu(!menu)} aria-expanded={menu} aria-controls="navigation" aria-label={menu?'Fechar menu':'Abrir menu'}>{menu?<X/>:<Menu/>}</button><nav id="navigation" className={menu?'nav open':'nav'} aria-label="Navegação principal">{links.map(([label,href])=><a key={href} href={href} onClick={()=>setMenu(false)}>{label}</a>)}</nav><a href="#propostas" className="nav-cta">Conheça as propostas <ArrowRight size={16}/></a></div></header>
