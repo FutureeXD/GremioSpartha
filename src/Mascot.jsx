@@ -7,7 +7,7 @@ export default function Mascot() {
     <div className="section-index"><span>CONHEÇA O NOSSO MASCOTE</span><span>O GUARDIÃO DA SPARTHA</span></div>
     <div className="mascot-layout">
       <div className="mascot-visual">
-        {site.images.mascot ? <img src={site.images.mascot} alt="Dório, a tartaruga guerreira mascote da chapa Spartha" /> : <div className="mascot-monogram" aria-hidden="true">D<span>✦</span></div>}
+        {site.images.mascotPortrait ? <img src={site.images.mascotPortrait} alt="Dório, a tartaruga guerreira da Spartha, em um emblema dourado" /> : <div className="mascot-monogram" aria-hidden="true">D<span>✦</span></div>}
         <span className="mascot-caption">MASCOTE OFICIAL · SPARTHA</span>
       </div>
       <div className="mascot-copy">
